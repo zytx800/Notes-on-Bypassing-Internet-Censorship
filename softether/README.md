@@ -29,6 +29,29 @@ sudo systemctl enable softether-vpnserver
 sudo systemctl start softether-vpnserver
 ```
 
+### Step 4 - Configure SoftEther vpn server
+
+```bash
+sudo vpncmd
+
+# Enter 1 - Management of VPN Server or VPN Bridge
+# Enter 127.0.0.1:5555 - when prompted Hostname of IP address of destination
+# Enter <empty> - when prompted Virtual Hub Name
+
+# To set server password
+ServerPasswordSet
+
+# To create a hub named VPN
+HubCreate VPN
+
+# Enable secure NAT on hub VPN
+Hub VPN
+SecureNatEnable
+
+# To exit
+exit
+```
+
 ## References
 
 [SoftEtherVPN GitHub](https://github.com/SoftEtherVPN/SoftEtherVPN/blob/master/src/BUILD_UNIX.md)
