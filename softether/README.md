@@ -29,7 +29,7 @@ sudo systemctl enable softether-vpnserver
 sudo systemctl start softether-vpnserver
 ```
 
-### Step 4 - Configure SoftEther vpn server
+### Step 4 - Initial configure SoftEther vpn server
 
 ```bash
 sudo vpncmd
@@ -50,6 +50,29 @@ SecureNatEnable
 
 # To exit
 exit
+```
+
+### Step 5 - To run vpncmd
+
+```bash
+sudo vpncmd 127.0.0.1:5555
+
+# To get List of TCP Listeners
+ListenerList
+
+# To stop listening on tcp port 443 and 1194
+ListenerDisable 443
+ListenerDisable 1194
+
+# To delete listening tcp port 443 and 1194
+ListenerDelete 443
+ListenerDelete 1194
+
+# To list the UDP ports that the server is listening on
+PortsUDPGet
+
+# To set the UDP ports that the server should listen on
+PortsUDPSet
 ```
 
 ## References
