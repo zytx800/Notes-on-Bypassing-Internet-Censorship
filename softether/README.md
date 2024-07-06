@@ -1,6 +1,6 @@
 # Setup SoftEther on Debian/Ubuntu
 
-## Setup SoftEther DE from source
+## Setup SoftEther DE
 
 ### Step 1 - Install requirements
 
@@ -73,6 +73,50 @@ PortsUDPGet
 
 # To set the UDP ports that the server should listen on
 PortsUDPSet
+```
+
+### Step 6 - Setting SSL certificate
+
+#### Option 1 - Standalone with Let’s Encrypt Certificate
+
+Install
+
+```bash
+sudo apt install -y snapd
+sudo snap install core
+sudo snap refresh core
+sudo snap install certbot --classic
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+
+Issue a certificate
+
+```bash
+sudo certbot certonly --standalone --preferred-challenges http --key-type rsa --agree-tos --email <your-email> -d <your-domain>
+```
+
+#### Option 2 - ACME.sh
+
+```bash
+sudo apt install -y socat
+sudo su
+cd ~
+curl https://get.acme.sh | sh -s email=<your-email>
+exit
+```
+
+Issue a certificate
+
+```bash
+sudo mkdir /usr/local/softether/certs
+
+sudo su
+cd ~
+~/.acme.sh/acme.sh \
+  --issue --force --standalone --days 90 -d "<your-domain>" \
+  --fullchain-file "/usr/local/softether/certs/<your-domain>.crt" \
+  --key-file "/usr/local/softether/certs/<your-domain>.crt.key"
+exit
 ```
 
 ## References
