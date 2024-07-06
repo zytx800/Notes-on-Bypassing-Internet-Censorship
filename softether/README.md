@@ -75,7 +75,7 @@ PortsUDPGet
 PortsUDPSet
 ```
 
-### Step 6 - Setting SSL certificate
+### Step 6 - Creating SSL certificate
 
 #### Option 1 - Standalone with Let’s Encrypt Certificate
 
@@ -118,6 +118,19 @@ cd ~
   --key-file "/usr/local/softether/certs/<your-domain>.crt.key"
 exit
 ```
+
+### Step 7 - Setting SSL certificate
+
+#### Option 1 - Set directly
+
+```bash
+sudo vpncmd 127.0.0.1:5555
+
+ServerCertSet
+```
+
+#### Option 2 - Using HAProxy
+
 
 ## References
 
