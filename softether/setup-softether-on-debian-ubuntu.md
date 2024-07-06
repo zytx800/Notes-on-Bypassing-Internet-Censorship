@@ -18,3 +18,7 @@ git submodule init && git submodule update
 make -C build
 sudo make -C build install
 ```
+
+## References
+
+[oftEtherVPN GitHub](https://github.com/SoftEtherVPN/SoftEtherVPN/blob/master/src/BUILD_UNIX.md)

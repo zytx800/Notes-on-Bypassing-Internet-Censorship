@@ -1,0 +1,14 @@
+[Unit]
+Description=SoftEther VPN server
+After=network-online.target
+After=dbus.service
+
+[Service]
+ExecStart=/opt/softether-vpnserver.sh start
+ExecStop=/opt/softether-vpnserver.sh stop
+ExecReload=/opt/softether-vpnserver.sh restart
+Restart=always
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
