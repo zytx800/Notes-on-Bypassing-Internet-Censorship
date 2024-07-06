@@ -19,6 +19,16 @@ make -C build
 sudo make -C build install
 ```
 
+### Step 3 - Creating service startup files
+
+```bash
+sudo wget -P /opt/ https://raw.githubusercontent.com/zytx800/vpn-notes/main/softether/softether-vpnserver.sh
+sudo wget -P /etc/systemd/system/ https://raw.githubusercontent.com/zytx800/vpn-notes/main/softether/softether-vpnserver.service
+sudo chmod 755 /opt/softether-vpnserver.sh
+sudo systemctl enable softether-vpnserver
+sudo systemctl start softether-vpnserver
+```
+
 ## References
 
 [SoftEtherVPN GitHub](https://github.com/SoftEtherVPN/SoftEtherVPN/blob/master/src/BUILD_UNIX.md)
