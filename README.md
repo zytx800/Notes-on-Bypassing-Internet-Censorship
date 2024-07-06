@@ -1,2 +1,2 @@
-# vpn-notes
-VPN Notes
+# VPN Notes
+
