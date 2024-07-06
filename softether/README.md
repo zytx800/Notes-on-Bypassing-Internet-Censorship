@@ -131,6 +131,7 @@ ServerCertSet
 
 #### Option 2 - Using HAProxy
 
+See haproxy for details.
 
 ## References
 
