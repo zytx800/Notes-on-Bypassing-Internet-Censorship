@@ -17,7 +17,13 @@ Step 2 - Issue a cert
 - Standalone (If port 80 is free and no web server is running)
 
 ```bash
-sudo certbot certonly --standalone --preferred-challenges http --key-type rsa --agree-tos --email <your-email> -d <your-domain>
+sudo certbot certonly --standalone --agree-tos --email <your-email> -d <your-domain>
+```
+
+Or key-type = rsa:
+
+```bash
+sudo certbot certonly --standalone --key-type rsa --agree-tos --email <your-email> -d <your-domain>
 ```
 
 - Nginx webroot plugin
@@ -64,5 +70,5 @@ exit
 
 - [letsencrypt.org](https://letsencrypt.org/)
 - [certbot.eff.org](https://certbot.eff.org/)
-- [Certbot documentation](https://eff-certbot.readthedocs.io/en/latest/)
+- [Certbot commands documentation](https://eff-certbot.readthedocs.io/en/latest/using.html#certbot-commands)
 - [ACME.sh GitHub](https://github.com/acmesh-official/acme.sh?tab=readme-ov-file)
