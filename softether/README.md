@@ -16,6 +16,8 @@ cd SoftEtherVPN
 git submodule init && git submodule update
 ./configure
 make -C build
+
+# (Optional) To install
 sudo make -C build install
 ```
 
@@ -35,8 +37,8 @@ sudo systemctl start softether-vpnserver
 sudo vpncmd
 
 # Enter 1 - Management of VPN Server or VPN Bridge
-# Enter 127.0.0.1:5555 - when prompted Hostname of IP address of destination
-# Enter <empty> - when prompted Virtual Hub Name
+# Enter 127.0.0.1:5555 - When prompted Hostname of IP address of destination
+# Enter <empty> or DEFAULT - When prompted Virtual Hub Name
 
 # To set server password
 ServerPasswordSet
@@ -77,23 +79,7 @@ PortsUDPSet
 
 ### Step 6 - Creating SSL certificate
 
-#### Option 1 - Standalone with Let’s Encrypt Certificate
 
-Install
-
-```bash
-sudo apt install -y snapd
-sudo snap install core
-sudo snap refresh core
-sudo snap install certbot --classic
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-```
-
-Issue a certificate
-
-```bash
-sudo certbot certonly --standalone --preferred-challenges http --key-type rsa --agree-tos --email <your-email> -d <your-domain>
-```
 
 #### Option 2 - ACME.sh
 

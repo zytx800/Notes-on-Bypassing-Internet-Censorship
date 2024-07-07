@@ -1,8 +1,34 @@
 # SSL Certificates
 
-## Option 1 - Using ACME.sh
+## Option 1 - Using Let’s Encrypt
 
-Step 1 - Install
+Step 1 - Install certbot using snapd
+
+```bash
+sudo apt install -y snapd
+sudo snap install core
+sudo snap refresh core
+sudo snap install certbot --classic
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+
+Step 2 - Issue a cert
+
+- For Standalone
+
+```bash
+sudo certbot certonly --standalone --preferred-challenges http --key-type rsa --agree-tos --email <your-email> -d <your-domain>
+```
+
+- For Nginx webroot plugin
+
+```bash
+# TODO
+```
+
+## Option 2 - Using ACME.sh
+
+Step 1 - Download acme.sh
 
 ```bash
 sudo apt install -y socat
@@ -12,7 +38,9 @@ curl https://get.acme.sh | sh -s email=<your-email>
 exit
 ```
 
-Step 2 - Issue a cert (Standalone)
+Step 2 - Issue a cert
+
+- For Standalone
 
 ```bash
 sudo mkdir /path/to
