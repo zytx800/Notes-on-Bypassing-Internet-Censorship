@@ -1,4 +1,4 @@
-# Setup SoftEther on Debian/Ubuntu
+# Setup SoftEther VPN Server on Debian/Ubuntu
 
 ## Setup SoftEther DE
 
