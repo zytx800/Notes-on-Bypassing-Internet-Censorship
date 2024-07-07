@@ -1,29 +1,35 @@
-# SSL Certificates
+# SSL Certificates on Debian/Ubuntu
 
-## Option 1 - Using Let’s Encrypt
+## Option 1 - Certbot
 
 Step 1 - Install certbot using snapd
 
 ```bash
 sudo apt install -y snapd
-sudo snap install core
-sudo snap refresh core
+# sudo snap install core
+# sudo snap refresh core
 sudo snap install certbot --classic
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
 Step 2 - Issue a cert
 
-- For Standalone (If port 80 is free and no web server installed)
+- Standalone (If port 80 is free and no web server is running)
 
 ```bash
 sudo certbot certonly --standalone --preferred-challenges http --key-type rsa --agree-tos --email <your-email> -d <your-domain>
 ```
 
-- For Nginx webroot plugin
+- Nginx webroot plugin
 
 ```bash
 # TODO
+```
+
+Step 3 - Test automatic renewal
+
+```bash
+sudo certbot renew --dry-run
 ```
 
 ## Option 2 - Using ACME.sh
@@ -58,4 +64,5 @@ exit
 
 - [letsencrypt.org](https://letsencrypt.org/)
 - [certbot.eff.org](https://certbot.eff.org/)
+- [Certbot documentation](https://eff-certbot.readthedocs.io/en/latest/)
 - [ACME.sh GitHub](https://github.com/acmesh-official/acme.sh?tab=readme-ov-file)
