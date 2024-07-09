@@ -18,3 +18,7 @@ haproxy -f /etc/haproxy/haproxy.cfg -c
 # To restart
 sudo systemctl restart haproxy
 ```
+
+## Example Configs
+
+See [examples](https://github.com/zytx800/vpn-notes/tree/main/haproxy/examples)
