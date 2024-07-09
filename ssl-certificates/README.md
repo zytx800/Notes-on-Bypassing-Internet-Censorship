@@ -14,16 +14,18 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 Step 2 - Issue a cert
 
-- Standalone (If port 80 is free and no web server is running)
+- Standalone (If port 80 is free on server or no web server is running)
 
 ```bash
-sudo certbot certonly --standalone -d <your-domain>
+sudo certbot certonly --standalone --agree-tos --non-interactive --email <your-email> -d <your-domain>
+
+# Note: Replace <your-email> and <your-domain> with actual email address and domain name.
 ```
 
 Or for key-type = rsa:
 
 ```bash
-sudo certbot certonly --standalone --preferred-challenges http --http-01-port 80 --key-type rsa --agree-tos --non-interactive --email <your-email> -d <your-domain>
+sudo certbot certonly --standalone --preferred-challenges http --key-type rsa --agree-tos --non-interactive --email <your-email> -d <your-domain>
 ```
 
 - Nginx webroot plugin
