@@ -21,6 +21,13 @@ make -C build
 sudo make -C build install
 ```
 
+Or, to downalod the latest release:
+
+```bash
+# Download SoftEtherVPN latest release:
+curl -s https://api.github.com/repos/SoftEtherVPN/SoftEtherVPN/releases/latest | sed 's/[()",{}]/ /g; s/ /\n/g' | grep "https.*releases/download.*/*.tar\.xz$" | wget -qi - -O - | tar -Jxf - --transform 's:^[^/]*:SoftEtherVPN:'
+```
+
 ### Step 3 - Create service startup files
 
 ```bash
