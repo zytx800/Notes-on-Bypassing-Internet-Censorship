@@ -17,13 +17,13 @@ Step 2 - Issue a cert
 - Standalone (If port 80 is free and no web server is running)
 
 ```bash
-sudo certbot certonly --standalone --agree-tos --email <your-email> -d <your-domain>
+sudo certbot certonly --standalone -d <your-domain>
 ```
 
-Or key-type = rsa:
+Or for key-type = rsa:
 
 ```bash
-sudo certbot certonly --standalone --key-type rsa --agree-tos --email <your-email> -d <your-domain>
+sudo certbot certonly --standalone --preferred-challenges http --http-01-port 80 --key-type rsa --agree-tos --non-interactive --email <your-email> -d <your-domain>
 ```
 
 - Nginx webroot plugin

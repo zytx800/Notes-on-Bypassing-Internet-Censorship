@@ -8,7 +8,7 @@
 sudo apt -y install cmake gcc g++ make pkgconf libncurses5-dev libssl-dev libsodium-dev libreadline-dev zlib1g-dev
 ```
 
-### Step 2 - Build from source code and install
+### Step 2 - Build source code and install
 
 ```bash
 git clone https://github.com/SoftEtherVPN/SoftEtherVPN.git
@@ -21,7 +21,7 @@ make -C build
 sudo make -C build install
 ```
 
-### Step 3 - Creating service startup files
+### Step 3 - Create service startup files
 
 ```bash
 sudo wget -P /opt/ https://raw.githubusercontent.com/zytx800/vpn-notes/main/softether/softether-vpnserver.sh
@@ -31,7 +31,7 @@ sudo systemctl enable softether-vpnserver
 sudo systemctl start softether-vpnserver
 ```
 
-### Step 4 - Initial configure SoftEther vpn server
+### Step 4 - Configure vpn server (Initial)
 
 ```bash
 sudo vpncmd
@@ -54,7 +54,7 @@ SecureNatEnable
 exit
 ```
 
-### Step 5 - To run vpncmd
+### Step 4 - Configure vpn server (Advanced)
 
 ```bash
 sudo vpncmd 127.0.0.1:5555
@@ -77,47 +77,17 @@ PortsUDPGet
 PortsUDPSet
 ```
 
-### Step 6 - Creating SSL certificate
+### Step 6 - Set a SSL certificate
 
+To issue a cert see [SSL Certificates section](https://github.com/zytx800/vpn-notes/tree/main/ssl-certificates)
 
-
-#### Option 2 - ACME.sh
-
-```bash
-sudo apt install -y socat
-sudo su
-cd ~
-curl https://get.acme.sh | sh -s email=<your-email>
-exit
-```
-
-Issue a certificate
-
-```bash
-sudo mkdir /usr/local/softether/certs
-
-sudo su
-cd ~
-~/.acme.sh/acme.sh \
-  --issue --force --standalone --days 90 -d "<your-domain>" \
-  --fullchain-file "/usr/local/softether/certs/<your-domain>.crt" \
-  --key-file "/usr/local/softether/certs/<your-domain>.crt.key"
-exit
-```
-
-### Step 7 - Setting SSL certificate
-
-#### Option 1 - Set directly
+To set a cert
 
 ```bash
 sudo vpncmd 127.0.0.1:5555
 
 ServerCertSet
 ```
-
-#### Option 2 - Using HAProxy
-
-See haproxy for details.
 
 ## References
 
