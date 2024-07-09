@@ -10,7 +10,7 @@ sudo apt install -y haproxy
 
 ```bash
 # To edit config
-nano /etc/haproxy/haproxy.cfg
+sudo nano /etc/haproxy/haproxy.cfg
 
 # To validate config
 haproxy -f /etc/haproxy/haproxy.cfg -c
