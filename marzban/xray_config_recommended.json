@@ -1,0 +1,168 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "VLESS_TCP_REALITY",
+      "listen": "127.0.0.1",
+      "port": 11000,
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "acceptProxyProtocol": true
+        },
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "dest": "discordapp.com:443",
+          "xver": 0,
+          "serverNames": ["cdn.discordapp.com", "discordapp.com"],
+          "privateKey": "aN7_rhKQUxAmlVgrnSfjzCyYuWJ5vEBfTYiO9jjeRFs",
+          "shortIds": ["", "c380da7bde6144f1"]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    },
+    {
+      "tag": "VLESS_GRPC_REALITY",
+      "port": 12000,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "vlgrpc"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "dest": "web.dev:443",
+          "xver": 0,
+          "serverNames": ["web.dev"],
+          "privateKey": "aN7_rhKQUxAmlVgrnSfjzCyYuWJ5vEBfTYiO9jjeRFs",
+          "shortIds": ["", "c380da7bde6144f1"]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"]
+      }
+    },
+    {
+      "tag": "TROJAN_WS",
+      "listen": "127.0.0.1",
+      "port": 8081,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "acceptProxyProtocol": true,
+          "path": "/tjwsIeBKfD8tq70nulcOqU",
+          "headers": {
+            "Host": "google.com"
+          }
+        },
+        "security": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    },
+    {
+      "tag": "VLESS_WS",
+      "listen": "127.0.0.1",
+      "port": 8082,
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "acceptProxyProtocol": true,
+          "path": "/vlwsIeBKfD8tq70nulcOqU",
+          "headers": {
+            "Host": "google.com"
+          }
+        },
+        "security": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    },
+    {
+      "tag": "VMESS_WS",
+      "listen": "127.0.0.1",
+      "port": 8083,
+      "protocol": "vmess",
+      "settings": {
+        "clients": []
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "acceptProxyProtocol": true,
+          "path": "/vmwsIeBKfD8tq70nulcOqU",
+          "headers": {
+            "Host": "google.com"
+          }
+        },
+        "security": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "DIRECT"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "BLOCK"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "ip": ["geoip:private"],
+        "outboundTag": "BLOCK",
+        "type": "field"
+      },
+      {
+        "domain": ["geosite:private"],
+        "outboundTag": "BLOCK",
+        "type": "field"
+      },
+      {
+        "protocol": ["bittorrent"],
+        "outboundTag": "BLOCK",
+        "type": "field"
+      }
+    ]
+  }
+}
