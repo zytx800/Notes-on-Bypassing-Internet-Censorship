@@ -1,10 +1,5 @@
 # Notes on Bypassing Internet Censorship in Myanmar
 
-This note focuses on installing free open source vpn server tools on a VPS server to bypass internet censorship in Myanmar. This note is divided into two parts:
-
-1. Choosing cloud virtual machine (VPS) providers
-2. Choosing circumvention methods (Choosing protocols and  software tools)
-
 ## Choosing cloud virtual machine (VPS) providers
 
 ### 1. Amazon AWS Lightsail (Recommended)
