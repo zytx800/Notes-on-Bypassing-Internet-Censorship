@@ -45,6 +45,12 @@ sudo systemctl start marzban
 # python3 main.py
 ```
 
+### Step 3 - Edit .env file
+
+```bash
+ sudo nano ~/Marzban/.env
+```
+
 ## References
 
 - [Marzban Docs](https://gozargah.github.io/marzban/en/docs/introduction)
