@@ -112,3 +112,12 @@ web servers such as Caddy and Nginx, and no additional features are introduced, 
 - Shadowsocks is one of the first protocols developped in China specifically to bypass the GFW.
 - Development started on April 20, 2012. It's original developper was forced to stop his/her work on the project due to outside pressure. Work on the protocol continues on till this day via various forks on the original project.
 - Currently, Burmese operators already have the technology to detect Shadowscocks traffics using GFW.
+
+### Unrecommended Protocols
+
+The following protocols are not recommended to use. Most traffic analysis systems including GFW can easily recognize them.
+- IKEv2
+- LTTP/IPSec
+- SSTP
+- WireGuard
+- OpenVPN
