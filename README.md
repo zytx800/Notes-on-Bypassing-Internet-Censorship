@@ -1,4 +1,4 @@
-# Notes on Bypassing Internet Censorship
+# Notes on Bypassing Internet Censorship in Myanmar
 
 This note focuses on installing free open source vpn server tools on a VPS server to bypass internet censorship in Myanmar. This note is divided into two parts:
 
