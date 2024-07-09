@@ -3,7 +3,7 @@
 This note focuses on installing free open source vpn server tools on a VPS server to bypass internet censorship in Myanmar. This note is divided into two parts:
 
 1. Choosing cloud virtual machine (VPS) providers
-2. Choosing protocols and vpn server softwares
+2. Choosing circumvention methods (Choosing protocols and  software tools)
 
 ## Choosing cloud virtual machine (VPS) providers
 
@@ -59,6 +59,6 @@ This note focuses on installing free open source vpn server tools on a VPS serve
 - [IONOS](https://www.ionos.it/server/vps)
 
 
-## Choosing protocols and vpn server softwares
+## Choosing circumvention methods
 
 TODO:
