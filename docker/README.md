@@ -32,4 +32,4 @@ sudo usermod -aG docker $USER
 
 ## References
 
-[Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
+- [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
