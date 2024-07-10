@@ -62,7 +62,7 @@
 
 - As the core part of project V, V2Ray is a tool that provides a secure platform for making private networks.
 - V2Ray was developed in 2015 as an alternative to Shadowsocks.
-- V2Ray is a powerful proxy platform that supports a variety of protocols, among them, only the VMESS protocol is an exclusive encrypted commnunication protocol originally created by the V2Ray community.
+- V2Ray is a powerful proxy platform that supports a variety of protocols, among them, only the VMess protocol is an exclusive encrypted commnunication protocol originally created by the V2Ray community.
 - V2Ray currently supports Blackhole, Dodkodemo-door, Freedom, HTTP, MTProto, Shadowsocks, Socks and VMess protocols.
 - As of December 2019, V2Ray's optional transport layer configurations are: TCP, mKCP, WebSocket, HTTP/2, DomainSocket, QUIC. Among them, mKCP, QUIC and TCP are used to optimize network quality, WebSocket is used for camouflage, HTTP/2 and DomainSocket are used for transmission and TLS encryption.
 - Links: 
@@ -110,41 +110,47 @@
 
 ### Protocol notes
 
-#### VMESS
+#### VMess
 
-- VMESS is a encrypted transmission protocol dedicated to V2Ray.
+- VMess is a encrypted transmission protocol dedicated to V2Ray.
+- VMess is a stateless protocol, which means that data can be transmitted directly between the client and the server without the need for a handshake. Each data transmission has no impact on other data transmissions before or after it.
+- When a VMess client initiates a request, the server checks whether the request comes from a legitimate client. If the validation passes, the server forwards the request and sends the obtained response back to the client.
+- VMess uses an asymmetric format, meaning that the requests sent by the client and the responses from the server use different formats.
+- VMess is a TCP-based protocol, and all data is transmitted using TCP.
 - It is divided into inbound and outbound parts, and usually used as a bridge between th V2Ray client and the server.
 - Because of the added obfuscation and encryption, it is said to be safer than Shadowsocks and more difficult for censors to detect VPN  activity as it seems like regular Internet traffic.
-- [Learn more](https://xtls.github.io/development/protocols/vmess.html)
+- [Learn more](https://xtls.github.io/en/development/protocols/vmess.html)
 
 #### VLESS
 
-- VLESS is the newest protocol of V2Ray and the main difference between VLESS and VMESS is that VLESS uses a simplified handshake process to reduce resource usage and increase
-performance. So it is lightweight and efficient.
+- VLESS is the newest protocol of V2Ray and the main difference between VLESS and VMess is that VLESS uses a simplified handshake process to reduce resource usage and increase performance. So it is lightweight and efficient.
 - It can operate faster and use less CPU power than other protocols.
-- VLESS also uses the latest version of TLS to provide better encryption and authentication.
-- [Learn more](https://xtls.github.io/development/protocols/vless.html)
+- Currently, VLESS does not have built-in encryption, please use it on a reliable channel, such as TLS or REALITY.
+- [Learn more](https://xtls.github.io/Xray-docs-next/en/development/protocols/vless.html)
 
-### Trojan
+### Trojan (Trojan-GFW)
 
-- Trojan started development in 2017.
-- Trojan, originally referred to Trojan horse, is a computer virus program. However, the Trojan we are talking about today is a new scientific Internet technology, the full name is Trojan-GFW, which is one of the most successful scientific Internet camouflage technologies.
+- Trojan is a proxy server, client and protocol, designed to bypass the Great Firewall of China by imitating HTTPS. Trojan claims to be unidentifiable.
 - You can think of Trojan as a simplified version of V2Ray's "WS+TLS" mode, which is faster than V2Ray, more realistic than V2Ray in camouflage, and more difficult to be identified by GFW.
-- Trojan processes HTTPS requests from the outside world. If it is legitimate, it will provide services for the request. Otherwise, it will transfer the traffic to web servers such as Caddy and Nginx, which will provide web access services for it.
-- Based on the entire interactive process, this can make your VPS more like a normal web server, because all Trojan behaviors are consistent with
-web servers such as Caddy and Nginx, and no additional features are introduced, making it difficult to identify.
+- When a trojan client connects to a server, it first performs a real TLS handshake. If the handshake succeeds, all subsequent traffic will be protected by TLS; otherwise, the server will close the connection immediately as any HTTPS server would.
+- Trojan now also supports nginx-like response to plain HTTP requests.
+- rojan is designed to operate in correctly configured TLS connections, as it does not provide encryption on its own.
+- [Learn more](https://trojan-gfw.github.io/trojan/protocol)
 
 ### Trojan-Go
 
 - Compared with the original Trojan, Trojan-Go has some more features, such as multiplexing (smux) to reduce latency, improve concurrent performance, CDN traffic transfer, etc.
 - Under normal circumstances, the clients of Trojan and Trojan-Go are universal, and the client of Trojan can be used for the connection of Trojan-Go.
 - However, the original Trojan does not support some multiplexing and other functions. If you need to use these functions, you need to use it with a special Trojan-Go client.
+- [Learn more](https://p4gefau1t.github.io/trojan-go/advance/customize-protocol-stack/)
 
 ### Shadowsocks (Not recommended)
 
 - Shadowsocks is one of the first protocols developped in China specifically to bypass the GFW.
-- Development started on April 20, 2012. It's original developper was forced to stop his/her work on the project due to outside pressure. Work on the protocol continues on till this day via various forks on the original project.
-- Currently, Burmese operators already have the technology to detect Shadowscocks traffics using GFW.
+- The shadowsocks protocol is very similar to SOCKS5 but encrypted and simpler.
+- It was created in 2012 by a Chinese programmer named "clowwindy", and it's original developper was forced to stop his/her work on the project due to outside pressure. Work on the protocol continues on till this day via various forks on the original project.
+- Currently, Burmese operators already have the technology to detect Shadowscocks traffics using Chinese's GFW.
+- [Learn more](https://en.wikipedia.org/wiki/Shadowsocks)
 
 ### Unrecommended Protocols
 
