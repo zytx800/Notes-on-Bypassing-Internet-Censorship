@@ -75,6 +75,14 @@ openssl rand -hex 8
 - [X-UI English](https://github.com/NidukaAkalanka/x-ui-english)
 - [Libertea](https://github.com/VZiChoushaDui/Libertea)
 
+## HAProxy
+
+- [Setup HAProxy on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/haproxy)
+
+## SSL
+
+- [Install SSL Certificates on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/ssl-certificates)
+
 ## Client apps
 
 ### Android apps
