@@ -94,8 +94,10 @@
 - [Hiddify](https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-us&gl=SG)
 - [v2rayN](https://github.com/2dust/v2rayN/releases)
 - [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)
-- macOS (X86 chip/ARM chip)
+- macOS (arm64 & x64)
+- [FoXray](https://apps.apple.com/us/app/foxray/id6448898396)
 - [V2RayXS](https://github.com/tzmax/V2RayXS/releases)
+- [Furious](https://github.com/LorenEteval/Furious)
 - [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)
 
 #### SoftEther
