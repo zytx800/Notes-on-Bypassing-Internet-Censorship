@@ -61,7 +61,7 @@ SecureNatEnable
 exit
 ```
 
-### Step 4 - Configure vpn server (Advanced)
+### Step 5 - Configure vpn server (Advanced)
 
 ```bash
 sudo vpncmd 127.0.0.1:5555
@@ -82,6 +82,9 @@ PortsUDPGet
 
 # To set the UDP ports that the server should listen on
 PortsUDPSet
+
+# To exit
+exit
 ```
 
 ### Step 6 - Set a SSL certificate
@@ -94,7 +97,15 @@ To set a cert
 sudo vpncmd 127.0.0.1:5555
 
 ServerCertSet
+# Enter fullchain and private key file paths
 ```
+
+### Step 7 - Download SoftEther VPN client for Windows
+
+[Download SoftEtherVPN client for Windows from GitHub releases](https://github.com/SoftEtherVPN/SoftEtherVPN/releases)
+
+Or, build SoftEther VPN for Windows from source:
+[Build SoftEther VPN for Windows](https://github.com/SoftEtherVPN/SoftEtherVPN/blob/master/src/BUILD_WINDOWS.md)
 
 ## References
 
