@@ -65,24 +65,44 @@
 - V2Ray is a powerful proxy platform that supports a variety of protocols, among them, only the VMESS protocol is an exclusive encrypted commnunication protocol originally created by the V2Ray community.
 - V2Ray currently supports Blackhole, Dodkodemo-door, Freedom, HTTP, MTProto, Shadowsocks, Socks and VMess protocols.
 - As of December 2019, V2Ray's optional transport layer configurations are: TCP, mKCP, WebSocket, HTTP/2, DomainSocket, QUIC. Among them, mKCP, QUIC and TCP are used to optimize network quality, WebSocket is used for camouflage, HTTP/2 and DomainSocket are used for transmission and TLS encryption.
-- Learn more [Project V Official Website](https://www.v2ray.com/en/), [GitHub v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
-
+- Links: 
+- [Project V Official Website](https://www.v2ray.com/en/)
+- [GitHub v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
+- See Xray links for more setup servers and client apps
 
 #### Xray
 
 - Xray is completely similar to V2Ray, and Xray is the core module of Project X.
-- Since rprx, the author of Xray and XTLS, was once an important member of the V2fiy community, Xray directly forked all V2Ray functions, optimized performance, added new functions, and created the original VLESS and XTLS protocols, making Xray a superset of V2Ray in terms of functionality and fully compatible with V2Ray.
-- In short, Xray is a branch of V2Ray. Xray is a superset of V2Ray.
+- Since rprx, the author of Xray and XTLS, was once an important member of the V2fly community, Xray directly forked all V2Ray functions, optimized performance, added new functions, and created the original VLESS and XTLS protocols, making Xray a superset of V2Ray in terms of functionality and fully compatible with V2Ray.
+- In short, Xray is a branch of V2Ray and Xray is a superset of V2Ray.
 - Xray XTLS protocol aims to enhance communication efficiency and allows Xray to work at a faster speed.
-- XTLS, one of Xray’s key features, is an improvement over V2Ray’s WS TLS protocol, which is less optimized for communication over the Internet. In addition to XTLS.
+- XTLS, one of Xray’s key features, is an improvement over V2Ray’s WS TLS protocol, which is less optimized for communication over the internet.
 - Xray also features a powerful routing system that is highly customizable.
-- Learn more [Project X Official Website](https://xtls.github.io/en/), [GitHub - XTLS/Xray-core](https://github.com/XTLS/Xray-core?tab=readme-ov-file)
+- Links:
+- [Project X Official Website](https://xtls.github.io/en/)
+- [GitHub - XTLS/Xray-core](https://github.com/XTLS/Xray-core)
+- [Install Xray Core on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/xray)
+- Android apps
+- [v2rayNG - Android - Download from Play Store](https://play.google.com/store/apps/details?id=com.v2ray.ang)
+- [Hiddify - Android - Download from Play Store](https://play.google.com/store/apps/details?id=app.hiddify.com)
+- [V2Box  - Android - Download from Play Store](https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box&hl=en_SG)
+- iOS apps
+- [FoXray  - iOS - Download from App Store](https://apps.apple.com/us/app/foxray/id6448898396)
+- [V2Box - iOS - Download from App Store](https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690)
+- [Streisand - iOS - Download from App Store](https://apps.apple.com/us/app/streisand/id6450534064)
+- Windows apps
+- [Hiddify](https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-us&gl=SG)
+- [v2rayN](https://github.com/2dust/v2rayN/releases)
+- [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)
+- macOS (X86 chip/ARM chip)
+- [V2RayXS](https://github.com/tzmax/V2RayXS/releases)
+- [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)
 
 #### SoftEther
 
 - SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
 - VPN protocols such as SSL-VPN (HTTPS), L2TP/IPsec, OpenVPN, and Microsoft Secure Socket Tunneling Protocol are provided in a single VPN server. Among those protocols, SoftEther's SSL-VPN (HTTPS) is currently resistant to GFW's filters.
-- Links: 
+- Links:
 - [SoftEther Official Website](https://www.softether.org/)
 - [GitHub - SoftEtherVPN/SoftEtherVPN](https://github.com/SoftEtherVPN/SoftEtherVPN)
 - [Setup SoftEther VPN Server on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/softether)
