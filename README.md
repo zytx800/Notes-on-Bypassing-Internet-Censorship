@@ -152,6 +152,12 @@
 - Currently, Burmese operators already have the technology to detect Shadowscocks traffics using Chinese's GFW.
 - [Learn more](https://en.wikipedia.org/wiki/Shadowsocks)
 
+### AmneziaWG
+
+- A modern iteration of the popular VPN protocol, AmneziaWG builds upon the foundation set by WireGuard®, retaining its simplified architecture and high-performance capabilities across devices.
+- While WireGuard® is known for its efficiency, it had issues with being easily detected due to its distinct packet signatures. AmneziaWG solves this problem by using better obfuscation methods, making its traffic blend in with regular internet traffic. This means that AmneziaWG keeps the fast performance of the original while adding an extra layer of stealth, making it a great choice for those wanting a fast and discreet VPN connection.
+- [Learn more](https://docs.amnezia.org/)
+
 ### Unrecommended Protocols
 
 The following protocols are not recommended to use. Most traffic analysis systems including GFW can easily recognize them.
