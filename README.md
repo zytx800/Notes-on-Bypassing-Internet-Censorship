@@ -100,6 +100,17 @@
 - [Furious](https://github.com/LorenEteval/Furious)
 - [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)
 
+#### sing-box
+
+- Sing-Box is a free and open-source proxy platform that allows users to bypass internet censorship and access blocked websites. It is an alternative to V2ray and XRAY.
+- It can be used with various V2Ray clients.
+- Sing-Box is designed to focus on performance, lightweight design, usability, modularity, and code quality.
+- In addition to supporting shadowsocks, trojan, vmess, and socks protocols, it also supports newer protocols like ShadowTLS, Hysteria, and NaiveProxy.
+- For transport, it can be used with V2ray transport options such as TCP, WebSocket, QUIC, and gRPC.
+- Links:
+- [Sing-box Official Website](https://sing-box.sagernet.org/)
+- [GitHub - SagerNet/sing-box](https://github.com/SagerNet/sing-box)
+
 #### SoftEther
 
 - SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
