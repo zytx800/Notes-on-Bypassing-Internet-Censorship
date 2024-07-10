@@ -129,7 +129,7 @@ performance. So it is lightweight and efficient.
 - Trojan, originally referred to Trojan horse, is a computer virus program. However, the Trojan we are talking about today is a new scientific Internet technology, the full name is Trojan-GFW, which is one of the most successful scientific Internet camouflage technologies.
 - You can think of Trojan as a simplified version of V2Ray's "WS+TLS" mode, which is faster than V2Ray, more realistic than V2Ray in camouflage, and more difficult to be identified by GFW.
 - Trojan processes HTTPS requests from the outside world. If it is legitimate, it will provide services for the request. Otherwise, it will transfer the traffic to web servers such as Caddy and Nginx, which will provide web access services for it.
--  Based on the entire interactive process, this can make your VPS more like a normal web server, because all Trojan behaviors are consistent with
+- Based on the entire interactive process, this can make your VPS more like a normal web server, because all Trojan behaviors are consistent with
 web servers such as Caddy and Nginx, and no additional features are introduced, making it difficult to identify.
 
 ### Trojan-Go
@@ -147,6 +147,7 @@ web servers such as Caddy and Nginx, and no additional features are introduced, 
 ### Unrecommended Protocols
 
 The following protocols are not recommended to use. Most traffic analysis systems including GFW can easily recognize them.
+
 - IKEv2
 - LTTP/IPSec
 - SSTP
