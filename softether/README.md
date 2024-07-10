@@ -100,7 +100,12 @@ ServerCertSet
 # Enter fullchain and private key file paths
 ```
 
-### Step 7 - Download SoftEther VPN client for Windows
+## Step 7 - (Optional) HAProxy
+
+- [Setup HAProxy on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/haproxy)
+
+
+### Step 8 - Download SoftEther VPN client for Windows
 
 [Download SoftEtherVPN client for Windows from GitHub releases](https://github.com/SoftEtherVPN/SoftEtherVPN/releases)
 
