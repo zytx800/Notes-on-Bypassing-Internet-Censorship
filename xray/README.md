@@ -111,6 +111,11 @@ openssl rand -hex 8
 - [nekoray](https://github.com/Matsuridayo/nekoray)
 - [Furious](https://github.com/LorenEteval/Furious)
 
+
+## Others that support VLESS, XTLS, REALITY, XUDP, PLUX
+
+- [sing-box](https://github.com/SagerNet/sing-box)
+
 ## References
 
 - [Xray-install](https://github.com/XTLS/Xray-install)
