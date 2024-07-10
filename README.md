@@ -115,6 +115,7 @@
 - VMESS is a encrypted transmission protocol dedicated to V2Ray.
 - It is divided into inbound and outbound parts, and usually used as a bridge between th V2Ray client and the server.
 - Because of the added obfuscation and encryption, it is said to be safer than Shadowsocks and more difficult for censors to detect VPN  activity as it seems like regular Internet traffic.
+- [Learn more](https://xtls.github.io/development/protocols/vmess.html)
 
 #### VLESS
 
@@ -122,6 +123,7 @@
 performance. So it is lightweight and efficient.
 - It can operate faster and use less CPU power than other protocols.
 - VLESS also uses the latest version of TLS to provide better encryption and authentication.
+- [Learn more](https://xtls.github.io/development/protocols/vless.html)
 
 ### Trojan
 
