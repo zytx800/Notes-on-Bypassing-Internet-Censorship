@@ -67,6 +67,7 @@
 - As of December 2019, V2Ray's optional transport layer configurations are: TCP, mKCP, WebSocket, HTTP/2, DomainSocket, QUIC. Among them, mKCP, QUIC and TCP are used to optimize network quality, WebSocket is used for camouflage, HTTP/2 and DomainSocket are used for transmission and TLS encryption.
 - Learn more [Project V Official Website](https://www.v2ray.com/en/), [GitHub v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
 
+
 #### Xray
 
 - Xray is completely similar to V2Ray, and Xray is the core module of Project X.
@@ -76,6 +77,15 @@
 - XTLS, one of Xray’s key features, is an improvement over V2Ray’s WS TLS protocol, which is less optimized for communication over the Internet. In addition to XTLS.
 - Xray also features a powerful routing system that is highly customizable.
 - Learn more [Project X Official Website](https://xtls.github.io/en/), [GitHub - XTLS/Xray-core](https://github.com/XTLS/Xray-core?tab=readme-ov-file)
+
+#### SoftEther
+
+- SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
+- VPN protocols such as SSL-VPN (HTTPS), L2TP/IPsec, OpenVPN, and Microsoft Secure Socket Tunneling Protocol are provided in a single VPN server. Among those protocols, SoftEther's SSL-VPN (HTTPS) is currently resistant to GFW's filters.
+- Links: 
+- [SoftEther Official Website](https://www.softether.org/)
+- [GitHub - SoftEtherVPN/SoftEtherVPN](https://github.com/SoftEtherVPN/SoftEtherVPN)
+- [Setup SoftEther VPN Server on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/softether)
 
 ### Protocol notes
 
