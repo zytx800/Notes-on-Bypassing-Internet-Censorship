@@ -68,6 +68,49 @@ sudo nano /usr/local/etc/xray/config.json
 openssl rand -hex 8
 ```
 
+## Web Admin Panels
+
+- [Marzban](https://github.com/Gozargah/Marzban) / [Setup Marzban on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/marzban)
+- [Hiddify Manager](https://github.com/hiddify/Hiddify-Manager)
+- [X-UI English](https://github.com/NidukaAkalanka/x-ui-english)
+- [Libertea](https://github.com/VZiChoushaDui/Libertea)
+
+## Client apps
+
+### Android apps
+
+- [v2rayNG - Android - Download from Play Store](https://play.google.com/store/apps/details?id=com.v2ray.ang)
+- [Hiddify - Android - Download from Play Store](https://play.google.com/store/apps/details?id=app.hiddify.com)
+- [V2Box  - Android - Download from Play Store](https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box&hl=en_SG)
+
+### iOS apps
+
+- [FoXray  - iOS - Download from App Store](https://apps.apple.com/us/app/foxray/id6448898396)
+- [V2Box - iOS - Download from App Store](https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690)
+- [Streisand - iOS - Download from App Store](https://apps.apple.com/us/app/streisand/id6450534064)
+
+### Windows apps
+
+- [Hiddify](https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-us&gl=SG)
+- [v2rayN](https://github.com/2dust/v2rayN/releases)
+- [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)
+- [nekoray](https://github.com/Matsuridayo/nekoray)
+- [Furious](https://github.com/LorenEteval/Furious)
+- [InvisibleMan-XRayClient](https://github.com/InvisibleManVPN/InvisibleMan-XRayClient)
+
+### macOS (arm64 & x64)
+
+- [FoXray](https://apps.apple.com/us/app/foxray/id6448898396)
+- [V2RayXS](https://github.com/tzmax/V2RayXS/releases)
+- [Furious](https://github.com/LorenEteval/Furious)
+- [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)
+
+### Linux apps
+
+- [v2rayA](https://github.com/v2rayA/v2rayA)
+- [nekoray](https://github.com/Matsuridayo/nekoray)
+- [Furious](https://github.com/LorenEteval/Furious)
+
 ## References
 
 - [Xray-install](https://github.com/XTLS/Xray-install)
