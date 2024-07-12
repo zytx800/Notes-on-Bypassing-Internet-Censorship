@@ -2,11 +2,13 @@
 
 I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about Internet Freedom and Internet Censorship Circumvention tools. This repo is a collection of short notes of what I experienced while building my own vpn platform to bypass internet censorship in Myanmar. So this note is divided into three parts as follows:
 
-1. Choosing Cloud Virtual Machine (VPS) Providers
-2. Choosing VPN / Proxy Tools
-3. Choosing Protocols and Security
+<!--ts-->
+1. [Choosing Cloud VPS Providers](#Choosing-Cloud-VPS-Providers)
+2. [Choosing VPN / Proxy Tools](#Choosing-VPN-/-Proxy-Tools)
+3. [Choosing Protocols and Security](#Choosing-Protocols-and-Security)
+<!--te-->
 
-## 1. Choosing Cloud Virtual Machine (VPS) Providers
+## 1. Choosing Cloud VPS Providers
 
 When selecting cloud VPS providers, I have listed them in order based on free trial availability and convenience with bank cards in Myanmar. Among them, Amazon AWS Lightsail is my favorite.
 
