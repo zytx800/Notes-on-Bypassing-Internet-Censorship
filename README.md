@@ -74,7 +74,7 @@ I choose VPN and Proxy tools base on the followings:
 
 1. Being free and open-source
 2. Long-term resistance and better bypass of GFW and other Internet filters
-3. Having a client app for Android, iOS, Windows and Linux platforms
+3. Having a client app for Android, iOS, Windows, macOS and Linux platforms
 4. Having good speed test results
 
 Out of everything I've tested so far, my favorite is **Xray configured with VLESS protocol + REALITY security**.
@@ -177,6 +177,14 @@ Learn more about SoftEther on [SoftEther Official Website](https://www.softether
 ##### Windows apps
 
 - [Download SoftEtherVPN client for Windows from GitHub releases](https://github.com/SoftEtherVPN/SoftEtherVPN/releases)
+
+### 3.5 Others
+
+- [OpenVPN](https://openvpn.net/) (Don't use it) - Most traffic analysis systems and GFW can easily recognize OpenVPN protocol and will block it.
+
+- [Outline VPN](https://getoutline.org/) (Not Recommended) - Outline vpn server uses Shadowsocks protocol. I tried Outline vpn with MPT FTTH, it got blocked after a few hours of use.
+
+- [Amnezia VPN](https://amnezia.org/en)  (Not Recommended) - In Amnezia vpn, you can choose a protocoal to use such as AmneziaWG, Xray, OpenVPN over Cloak, WireGuard, Ipsec (IKEv2). I tried Amnezia vpn and AmneziaWG with MPT FTTH, it got blocked after a few days of use.
 
 ## 4. Choosing Protocols and Security
 
