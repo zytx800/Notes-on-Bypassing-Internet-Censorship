@@ -2,7 +2,7 @@
 
 I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW liked firewalls and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about internet freedom and internet censorship circumvention tools. There are many methods to bypass internet censorship. This repo is focusd on a short notes of what I experienced while building my own vpn platform to bypass internet censorship in Myanmar.
 
-I divide this note into four parts as follows:
+I divide this note into three parts as follows:
 
 1. [Choosing Cloud VPS Providers](#1-choosing-cloud-vps-providers)
 2. [Choosing VPN / Proxy Tools](#2-choosing-vpn--proxy-tools)
