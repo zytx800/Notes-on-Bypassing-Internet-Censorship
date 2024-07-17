@@ -1,6 +1,6 @@
 # Notes on Bypassing Internet Censorship in Myanmar
 
-I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW liked firewalls and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about Internet Freedom and Internet Censorship Circumvention tools. This repo is a collection of short notes of what I experienced while building my own vpn platform to bypass internet censorship in Myanmar. I divide this note into four parts as follows:
+I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW liked firewalls and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about internet freedom and internet censorship circumvention tools. This repo is a collection of short notes of what I experienced while building my own vpn platform to bypass internet censorship in Myanmar. I divide this note into four parts as follows:
 
 1. [Short Note](#1-short-note)
 2. [Choosing Cloud VPS Providers](#2-choosing-cloud-vps-providers)
@@ -9,9 +9,9 @@ I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org
 
 ## 1. Short Note
 
-There are many methods to bypass internet censorship. My favorite among these is making a personal vpn platform using a cloud virtual private server (VPS). This method does not cost money during the free trial period of cloud providers, and is very good in terms of speed performance and reliable in terms of data security. 
+There are many methods to bypass internet censorship. My favorite among these is making a personal vpn platform using a cloud virtual private server (VPS). This method does not cost money during the free trial period of cloud providers, and is very good in terms of speed performance and reliable in terms of data security.
 
-In short, my favorite cloud vps provider is Amzon AWS Lightsail and my personally recommended vpn server configuration is to use Xray with VLESS protocol and REALITY security. Another suggestion is that when setting up a vpn server, you should change your domain name and public ip every 1 or 2 months because GFW may still block your domains and IPs based on usage after a period of time.
+In short, my favorite cloud vps provider is **Amzon AWS Lightsail** and my personally recommended vpn server configuration is to use **Xray** with **VLESS** protocol and **REALITY** or **TLS** security. Another suggestion is that when setting up a vpn server, ***you should change your domain name and public ip every 3 or 4 weeks*** because GFW and traffic analyzers may still block your domains and IPs based on usage after a period of time.
 
 ## 2. Choosing Cloud VPS Providers
 
@@ -98,13 +98,15 @@ Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/
 #### Server-side setup
 
 - [Install Xray Core on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/xray)
+- [Hiddify Manager Setup](https://hiddify.com/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/) - (Xray + User Management Admin Web Panel)
+- [Marzban Web Panel Setup](https://github.com/Gozargah/Marzban) - (Xray + User Management Admin Web Panel)
 
 #### Client apps
 
 ##### Android apps
 
-- [v2rayNG - Download from Play Store](https://play.google.com/store/apps/details?id=com.v2ray.ang) / [GitHub repo](https://github.com/2dust/v2rayNG) (Recommended)
 - [Hiddify - Download from Play Store](https://play.google.com/store/apps/details?id=app.hiddify.com) / [GitHub repo](https://github.com/hiddify/hiddify-next)  (Recommended)
+- [v2rayNG - Download from Play Store](https://play.google.com/store/apps/details?id=com.v2ray.ang) / [GitHub repo](https://github.com/2dust/v2rayNG) (Recommended)
 
 ##### iOS apps
 
