@@ -2,7 +2,7 @@
 
 ## Step 1 - Setup Xray Core on Debian/Ubuntu
 
-Skip this step if you are using [Admin Web Panels](#step-2---xray-core-with-user-management-web-admin-panels).
+Skip this step if you are using [Admin Web Panels](#step-2---optional-xray-core-with-user-management-web-admin-panels).
 
 ### Option 1 - Quick Install
 
