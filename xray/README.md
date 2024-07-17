@@ -1,6 +1,8 @@
 # Install Xray Core on Debian/Ubuntu
 
-## Install
+## Step 1 - Xray Core Setup
+
+Skip this step if you are using Admin Web Panels.
 
 ### Option 1 - Quick Install
 
@@ -26,7 +28,7 @@ sudo unzip Xray-linux-64.zip
 sudo rm Xray-linux-64.zip
 ```
 
-## Enable and start service if using install script
+### Enable and start service if using install script
 
 ```bash
 # Enable
@@ -46,13 +48,13 @@ systemctl status xray
 q #To quit
 ```
 
-## Xray config location if using install script
+### Xray config location if using install script
 
 ```bash
 sudo nano /usr/local/etc/xray/config.json
 ```
 
-## Xray useful commands
+### Xray useful commands
 
 ```bash
 # Go to xray-core directory and
@@ -68,24 +70,20 @@ sudo nano /usr/local/etc/xray/config.json
 openssl rand -hex 8
 ```
 
-## Web Admin Panels
+## Step 2 - Xray Core with User Management Web Admin Panels
 
-- [Marzban](https://github.com/Gozargah/Marzban) / [Setup Marzban on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/marzban)
 - [Hiddify Manager](https://github.com/hiddify/Hiddify-Manager)
+- [Marzban](https://github.com/Gozargah/Marzban) / [Setup Marzban on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/marzban)
 - [X-UI English](https://github.com/NidukaAkalanka/x-ui-english)
 - [Libertea](https://github.com/VZiChoushaDui/Libertea)
 
-## HAProxy
+## Step 3 - (Optional) Proxy Servers / Load Balancers
 
 - [Setup HAProxy on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/haproxy)
 
-## SSL
+## Step 4 - (Optional) Install SSL Certificate
 
 - [Install SSL Certificates on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/ssl-certificates)
-
-## Others that support VLESS, XTLS, REALITY, XUDP, PLUX
-
-- [sing-box](https://github.com/SagerNet/sing-box)
 
 ## References
 
