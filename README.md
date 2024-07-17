@@ -1,23 +1,31 @@
 # Notes on Bypassing Internet Censorship in Myanmar
 
-I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW liked firewalls and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about internet freedom and internet censorship circumvention tools. This repo is a collection of short notes of what I experienced while building my own vpn platform to bypass internet censorship in Myanmar. I divide this note into four parts as follows:
+I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW liked firewalls and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about internet freedom and internet censorship circumvention tools. There are many methods to bypass internet censorship. This repo is focusd on a short notes of what I experienced while building my own vpn platform to bypass internet censorship in Myanmar.
 
-1. [Short Note](#1-short-note)
-2. [Choosing Cloud VPS Providers](#2-choosing-cloud-vps-providers)
-3. [Choosing VPN / Proxy Tools](#3-choosing-vpn--proxy-tools)
-4. [Choosing Protocols and Security](#4-choosing-protocols-and-security)
+I divide this note into four parts as follows:
 
-## 1. Short Note
+1. [Choosing Cloud VPS Providers](#1-choosing-cloud-vps-providers)
+2. [Choosing VPN / Proxy Tools](#2-choosing-vpn--proxy-tools)
+3. [Choosing Protocols and Security](#3-choosing-protocols-and-security)
 
-There are many methods to bypass internet censorship. My favorite among these is making a personal vpn platform using a cloud virtual private server (VPS). This method does not cost money during the free trial period of cloud providers, and is very good in terms of speed performance and reliable in terms of data security.
 
-In short, my favorite cloud vps provider is **Amzon AWS Lightsail** and my personally recommended vpn server configuration is to use **Xray** with **VLESS** protocol and **REALITY** or **TLS** security. Another suggestion is that when setting up a vpn server, ***you should change your domain name and public ip every 3 or 4 weeks*** because GFW and traffic analyzers may still block your domains and IPs based on usage after a period of time.
+Another suggestion is that when setting up a vpn server, ***you should change your domain name and public ip every 3 or 4 weeks*** because GFW and traffic analyzers may still block your domains and IPs based on usage after a period of time.
 
-## 2. Choosing Cloud VPS Providers
+## 1. Choosing Cloud VPS Providers
+
+Before choosing cloud vps providers, you need to know a little about international bank cards issued by Myanmar banks. Myanmar banks issue **VISA**, **Mastercard**, **JCB** and **UnionPay** cards as international payment cards. Most cloud service providers accept **Debit Card** or **Credit Card** only. **Prepaid Cards (Top-up Cards)** are not accepted by most cloud service providers.
+
+Here is some banks that issue debit cards or credit cards (***Note: UnionPay cards are not included***):
+
+- **AYA Bank**: JCB (Debit & Credit Cards), VISA (Credit Card Only)
+- **CB Bank**: JCB (Debit Card Only), VISA (Credit Card Only), Mastercard (Credit Card Only)
+- **KBZ Bank**: VISA (Credit Card Only)
+- **UAB Bank**: VISA (Credit Card Only)
+- **Yoma Bank**: Mastercard (Debit Card Only)
 
 When selecting cloud VPS providers, I have listed them in order based on free trial availability and convenience with bank cards in Myanmar.
 
-### 2.1 Amazon AWS Lightsail (Recommended)
+### 1.1 Amazon AWS Lightsail (Recommended)
 
 - 3 months free tier available for new customers
 - Up to free **3 TB** monthly data traffic to internet when selecting 12 USD / month free trial plan, see more [data traffic pricing FAQ](https://aws.amazon.com/lightsail/faq/)
@@ -26,7 +34,7 @@ When selecting cloud VPS providers, I have listed them in order based on free tr
 - Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards, and I have not tested with UnionPay debit cards.)
 - [AWS Lightsail Website Link](https://aws.amazon.com/free/compute/lightsail/)
 
-### 2.2 Amazon AWS EC2
+### 1.2 Amazon AWS EC2
 
 - 12 months free tier available for new customers
 - 1 x t2.micro instance per month in free tier
@@ -36,14 +44,14 @@ When selecting cloud VPS providers, I have listed them in order based on free tr
 - Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards, and I have not tested with UnionPay debit cards.)
 - [AWS EC2 Website Link](https://aws.amazon.com/ec2/)
 
-### 2.3 Microsoft Azure
+### 1.3 Microsoft Azure
 
 - Free $200 credit for 12 months for new customers
 - Free **100 GB** data traffic monthly to internet, see more [Azure data traffice bandwidth pricing](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)
 - Azure account registration is currently not supported for Myanmar region, but VISA credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a Microsoft Azure supported country to help you sign up)
 - [Microsoft Azure Website Link](https://azure.microsoft.com/en-us/free)
 
-### 2.4 Google Cloud Platform
+### 1.4 Google Cloud Platform
 
 - Free $300 credit for 12 months for new customers
 - 1 x ec2-miro instance per month in free tier
@@ -51,24 +59,17 @@ When selecting cloud VPS providers, I have listed them in order based on free tr
 - GCP account registration is currently not supported for Myanmar region, but VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a GCP supported country to help you sign up)
 - [Google Cloud Platform Website Link](https://cloud.google.com/free/)
 
-### 2.5 DigitalOcean (Not Tested)
+### 1.5 DigitalOcean (Not Tested)
 
 - $200 free credit for 60 days for new customers
 - [DigitalOcean Website Link](https://try.digitalocean.com/freetrialoffer/)
 
-### 2.6 Oracle Cloud Infrastructure  (Not Tested)
+### 1.6 Oracle Cloud Infrastructure  (Not Tested)
 
 - $300 free credit for 30 days for new customers
 - [OCI Website Link](https://www.oracle.com/sg/cloud/free/)
 
-
-### 2.7 Others (Not Tested)
-
-- [AlexHost](https://alexhost.com/vps/#unmanaged-link)
-- [aeza.net](https://aeza.net/virtual-servers)
-- [IONOS](https://www.ionos.it/server/vps)
-
-## 3. Choosing VPN / Proxy Tools
+## 2. Choosing VPN / Proxy Tools
 
 I choose VPN and Proxy tools base on the followings:
 
@@ -79,7 +80,7 @@ I choose VPN and Proxy tools base on the followings:
 
 Out of everything I've tested so far, my favorite is **Xray configured with VLESS protocol + REALITY security**.
 
-### 3.1 Xray (Recommended)
+### 2.1 Xray (Recommended)
 
 Xray is completely similar to V2Ray, and Xray is the core module of [Project X](https://xtls.github.io/en/).
 
@@ -134,7 +135,7 @@ Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/
 - [nekoray - Download from GitHub release](https://github.com/MatsuriDayo/nekoray/releases)  - (Note: Not tested)
 - [Furious - Download from GitHub release](https://github.com/LorenEteval/Furious/releases) (Note: Not tested)
 
-### 3.2 Sing-box (Not Tested)
+### 2.2 Sing-box (Not Tested)
 
 It is an alternative to V2Ray and Xray and it can be used with various V2Ray/Xray clients.
 
@@ -146,7 +147,7 @@ For transport, it can be used with V2Ray transport options such as TCP, WebSocke
 
 Learn more sing-box on [Sing-box Official Website](https://sing-box.sagernet.org/)
 
-### 3.3 V2Ray
+### 2.3 V2Ray
 
 As the core part of [Project V](https://www.v2ray.com/), V2Ray is a tool that provides a secure platform for making private networks.
 
@@ -160,7 +161,7 @@ As of December 2019, V2Ray's optional transport layer configurations are: TCP, m
 
 Learn more about V2Ray on [Project V Official Website](https://www.v2ray.com/en/)
 
-### 3.4 SoftEther
+### 2.4 SoftEther
 
 SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
 
@@ -180,7 +181,7 @@ Learn more about SoftEther on [SoftEther Official Website](https://www.softether
 
 - [Download SoftEtherVPN client for Windows from GitHub releases](https://github.com/SoftEtherVPN/SoftEtherVPN/releases)
 
-### 3.5 Others
+### 2.5 Others
 
 - [OpenVPN](https://openvpn.net/) (Don't use it) - Most traffic analysis systems and GFW can easily recognize OpenVPN protocol and will block it.
 
@@ -188,9 +189,9 @@ Learn more about SoftEther on [SoftEther Official Website](https://www.softether
 
 - [Amnezia VPN](https://amnezia.org/en)  (Not Recommended) - In Amnezia vpn, you can choose a protocoal to use such as AmneziaWG, Xray, OpenVPN over Cloak, WireGuard, Ipsec (IKEv2). I tried Amnezia vpn and AmneziaWG with MPT FTTH, it got blocked after a few days of use.
 
-## 4. Choosing Protocols and Security
+## 3. Choosing Protocols and Security
 
-### 4.1 VMess
+### 3.1 VMess
 
 VMess is a encrypted transmission protocol dedicated to V2Ray.
 
@@ -208,7 +209,7 @@ Because of the added obfuscation and encryption, it is said to be safer than Sha
 
 [Learn more about VMess](https://xtls.github.io/en/development/protocols/vmess.html)
 
-### 4.2 VLESS (Recommended)
+### 3.2 VLESS (Recommended)
 
 VLESS is the newest protocol of V2Ray and the main difference between VLESS and VMess is that VLESS uses a simplified handshake process to reduce resource usage and increase performance. So it is lightweight and efficient.
 
@@ -218,7 +219,7 @@ Currently, VLESS does not have built-in encryption, please use it on a reliable 
 
 [Learn more about VLESS](https://xtls.github.io/Xray-docs-next/en/development/protocols/vless.html)
 
-### 4.3 Trojan (Trojan-GFW)
+### 3.3 Trojan (Trojan-GFW)
 
 Trojan is a proxy server, client and protocol, designed to bypass the Great Firewall of China by imitating HTTPS. Trojan claims to be unidentifiable.
 
@@ -232,7 +233,7 @@ Trojan is designed to operate in correctly configured TLS connections, as it doe
 
 [Learn more about Trojan-GFW](https://trojan-gfw.github.io/trojan/protocol)
 
-### 4.4 Trojan-Go (Recommended)
+### 3.4 Trojan-Go (Recommended)
 
 Compared with the original Trojan, Trojan-Go has some more features, such as multiplexing (smux) to reduce latency, improve concurrent performance, CDN traffic transfer, etc.
 
@@ -242,7 +243,7 @@ However, the original Trojan does not support some multiplexing and other functi
 
 [Learn more about Trojan-Go](https://p4gefau1t.github.io/trojan-go/advance/customize-protocol-stack/)
 
-### 4.5 Shadowsocks (Not recommended)
+### 3.5 Shadowsocks (Not recommended)
 
 Shadowsocks is one of the first protocols developped in China specifically to bypass the GFW.
 
@@ -254,7 +255,7 @@ Currently, Burmese operators already have the technology to detect Shadowscocks 
 
 [Learn more about Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks)
 
-### 4.6 AmneziaWG
+### 3.6 AmneziaWG
 
 AmneziaWG is built upon the foundation set by WireGuard®, retaining its simplified architecture and high-performance capabilities across devices.
 
@@ -262,7 +263,7 @@ While WireGuard® is known for its efficiency, it had issues with being easily d
 
 [Learn more about Amnezia VPN](https://docs.amnezia.org/)
 
-### 4.7 Unrecommended Protocols
+### 3.7 Unrecommended Protocols
 
 The following protocols are not recommended to use. Most traffic analysis systems including GFW can easily recognize them.
 
