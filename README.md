@@ -15,7 +15,7 @@ Another suggestion is that when setting up a vpn server, ***you should change yo
 
 Before choosing cloud vps providers, you need to know a little about international bank cards issued by Myanmar banks. Myanmar banks issue **VISA**, **Mastercard**, **JCB** and **UnionPay** cards as international payment cards. Most cloud service providers accept **Debit Card** or **Credit Card** only. **Prepaid Cards (Top-up Cards)** are not accepted by most cloud service providers.
 
-Here is some banks that issue debit cards or credit cards (***Note: UnionPay cards are not included***):
+Here is some banks that issue debit cards or credit cards (***Note: UnionPay cards are not listed here***):
 
 - **AYA Bank**: JCB (Debit & Credit Cards), VISA (Credit Card Only)
 - **CB Bank**: JCB (Debit Card Only), VISA (Credit Card Only), Mastercard (Credit Card Only)
@@ -23,7 +23,7 @@ Here is some banks that issue debit cards or credit cards (***Note: UnionPay car
 - **UAB Bank**: VISA (Credit Card Only)
 - **Yoma Bank**: Mastercard (Debit Card Only)
 
-When selecting cloud VPS providers, I have listed them in order based on free trial availability and convenience with bank cards in Myanmar.
+When selecting cloud vps providers, I have listed them in order based on free trial availability and convenience with bank cards in Myanmar.
 
 ### 1.1 Amazon AWS Lightsail (Recommended)
 
