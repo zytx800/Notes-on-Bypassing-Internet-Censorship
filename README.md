@@ -78,8 +78,6 @@ I choose VPN and Proxy tools base on the followings:
 3. Having a client app for Android, iOS, Windows, macOS and Linux platforms
 4. Having good speed test results
 
-Out of everything I've tested so far, my favorite is **Xray configured with VLESS protocol + REALITY security**.
-
 ### 2.1 Xray (Recommended)
 
 Xray is completely similar to V2Ray, and Xray is the core module of [Project X](https://xtls.github.io/en/).
