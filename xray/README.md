@@ -1,8 +1,8 @@
-# Install Xray Core on Debian/Ubuntu
+# Setup Xray Core
 
-## Step 1 - Xray Core Setup
+## Step 1 - Setup Xray Core on Debian/Ubuntu
 
-Skip this step if you are using Admin Web Panels.
+Skip this step if you are using [Admin Web Panels](#step-2---xray-core-with-user-management-web-admin-panels).
 
 ### Option 1 - Quick Install
 
@@ -70,7 +70,7 @@ sudo nano /usr/local/etc/xray/config.json
 openssl rand -hex 8
 ```
 
-## Step 2 - Xray Core with User Management Web Admin Panels
+## Step 2 - (Optional) Xray Core with User Management Web Admin Panels
 
 - [Hiddify Manager](https://github.com/hiddify/Hiddify-Manager)
 - [Marzban](https://github.com/Gozargah/Marzban) / [Setup Marzban on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/marzban)
