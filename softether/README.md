@@ -1,6 +1,6 @@
 # Setup SoftEther VPN Server on Debian/Ubuntu
 
-## Setup SoftEther DE
+## Setup SoftEther DE (Developer Edition)
 
 ### Step 1 - Install requirements
 
@@ -38,13 +38,13 @@ sudo systemctl enable softether-vpnserver
 sudo systemctl start softether-vpnserver
 ```
 
-### Step 4 - Configure vpn server (Initial)
+### Step 4 - Configure vpn server
 
 ```bash
 sudo vpncmd
 
 # Enter 1 - Management of VPN Server or VPN Bridge
-# Enter 127.0.0.1:5555 - When prompted Hostname of IP address of destination
+# Enter 127.0.0.1:5555 or 127.0.0.1:443 - When prompted Hostname of IP address of destination
 # Enter <empty> or DEFAULT - When prompted Virtual Hub Name
 
 # To set server password
@@ -61,20 +61,23 @@ SecureNatEnable
 exit
 ```
 
-### Step 5 - Configure vpn server (Advanced)
+### Step 5 - (Optional) Configure vpn server ports
 
 ```bash
+# If using port 5555
 sudo vpncmd 127.0.0.1:5555
+# Or, if using port 443
+# sudo vpncmd 127.0.0.1:443
 
 # To get List of TCP Listeners
 ListenerList
 
 # To stop listening on tcp port 443 and 1194
-ListenerDisable 443
+# ListenerDisable 443
 ListenerDisable 1194
 
 # To delete listening tcp port 443 and 1194
-ListenerDelete 443
+# ListenerDelete 443
 ListenerDelete 1194
 
 # To list the UDP ports that the server is listening on
@@ -94,15 +97,14 @@ To issue a cert see [SSL Certificates section](https://github.com/zytx800/vpn-no
 To set a cert
 
 ```bash
+# If using port 5555
 sudo vpncmd 127.0.0.1:5555
+# Or, if using port 443
+# sudo vpncmd 127.0.0.1:443
 
 ServerCertSet
 # Enter fullchain and private key file paths
 ```
-
-## Step 7 - (Optional) HAProxy
-
-- [Setup HAProxy on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/haproxy)
 
 ## References
 
