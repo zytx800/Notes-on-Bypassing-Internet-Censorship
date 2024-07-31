@@ -99,26 +99,26 @@ Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/
 #### Server-side setup
 
 - [Install Xray Core on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/xray)
-- [Hiddify Manager Setup](https://hiddify.com/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/) - (Xray + User Management Admin Web Panel)
-- [Marzban Web Panel Setup](https://github.com/Gozargah/Marzban) - (Xray + User Management Admin Web Panel)
+- [Hiddify Manager Setup](https://hiddify.com/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/) - (Xray Core + User Management Admin Web Panel - My Preferred Method)
+- [Marzban Web Panel Setup](https://github.com/Gozargah/Marzban) - (Xray Core + User Management Admin Web Panel)
 
 #### Client apps
 
 ##### Android apps
 
-- [Hiddify - Download from Play Store](https://play.google.com/store/apps/details?id=app.hiddify.com) / [GitHub repo](https://github.com/hiddify/hiddify-next)  (Recommended)
-- [v2rayNG - Download from Play Store](https://play.google.com/store/apps/details?id=com.v2ray.ang) / [GitHub repo](https://github.com/2dust/v2rayNG) (Recommended)
+- [Hiddify - Download from Play Store](https://play.google.com/store/apps/details?id=app.hiddify.com) / [GitHub repo](https://github.com/hiddify/hiddify-next)  (My Preferred Andorid App)
+- [v2rayNG - Download from Play Store](https://play.google.com/store/apps/details?id=com.v2ray.ang) / [GitHub repo](https://github.com/2dust/v2rayNG)
 
 ##### iOS apps
 
-- [FoXray - Download from App Store](https://apps.apple.com/us/app/foxray/id6448898396) Recommended - (Note: Free, not open-source)
+- [FoXray - Download from App Store](https://apps.apple.com/us/app/foxray/id6448898396) (Note: Free, not open-source - My Preferred iOS App)
 - [V2Box - Download from App Store](https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690)  (Note: Free, not open-source, contains Ads)
 - [Streisand - Download from App Store](https://apps.apple.com/us/app/streisand/id6450534064) (Note: Free, not open-source, contains Ads)
 
 ##### Windows apps
 
-- [Hiddify - Download form Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-us&gl=SG) / [GitHub repo](https://github.com/hiddify/hiddify-next) (Recommended)
-- [v2rayN - Download from GitHub release](https://github.com/2dust/v2rayN/releases) (Recommended)
+- [Hiddify - Download form Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-us&gl=SG) / [GitHub repo](https://github.com/hiddify/hiddify-next) (My Preferred Windows App)
+- [v2rayN - Download from GitHub release](https://github.com/2dust/v2rayN/releases)
 - [Qv2ray - Download from GitHub release](https://github.com/Qv2ray/Qv2ray/releases) (Note: Only a few procols are supported)
 - [Furious - Download from GitHub release](https://github.com/LorenEteval/Furious/releases) (Note: Not tested)
 
@@ -161,7 +161,7 @@ As of December 2019, V2Ray's optional transport layer configurations are: TCP, m
 
 Learn more about V2Ray on [Project V Official Website](https://www.v2ray.com/en/)
 
-### 2.4 SoftEther
+### 2.4 SoftEther (Recommended for Windows Users)
 
 SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
 
