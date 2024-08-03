@@ -17,7 +17,7 @@ Another suggestion is that when setting up a vpn server, ***you should change yo
 
 Before choosing cloud vps providers, you need to know a little about international bank cards issued by Myanmar banks. Myanmar banks issue **VISA**, **Mastercard**, **JCB** and **UnionPay** cards as international payment cards. Most cloud service providers accept **Debit Card** or **Credit Card** only. **Prepaid Cards (Top-up Cards)** are not accepted by most cloud service providers.
 
-Here is some banks that issue debit cards or credit cards (***Note: UnionPay cards are not listed here***):
+Here are some debit and credit cards that can be used in most cloud service providers and the banks that issue them:
 
 - **AYA Bank**: JCB (Debit & Credit Cards), VISA (Credit Card Only)
 - **CB Bank**: JCB (Debit Card Only), VISA (Credit Card Only), Mastercard (Credit Card Only)
@@ -33,7 +33,7 @@ When selecting cloud vps providers, I have listed them in order based on free tr
 - Up to free **3 TB** monthly data traffic to internet when selecting 12 USD / month free trial plan, see more [data traffic pricing FAQ](https://aws.amazon.com/lightsail/faq/)
 - 2 vCPUs, 2 GB RAM, 60GB SSD
 - Suport account registration from Myanmar
-- Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards, and I have not tested with UnionPay debit cards.)
+- Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards.)
 - [AWS Lightsail Website Link](https://aws.amazon.com/free/compute/lightsail/)
 
 ### 1.2 Amazon AWS EC2
@@ -43,7 +43,7 @@ When selecting cloud vps providers, I have listed them in order based on free tr
 - Free **100 GB** data traffic monthly to internet, see more [ec2 data traffic pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
 - 1 vCPUs, 1 GB RAM and 30GB SSD
 - Suport account registration from Myanmar
-- Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards, and I have not tested with UnionPay debit cards.)
+- Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards.)
 - [AWS EC2 Website Link](https://aws.amazon.com/ec2/)
 
 ### 1.3 Microsoft Azure
