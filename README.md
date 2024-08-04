@@ -25,7 +25,7 @@ Here are some debit and credit cards that can be used in most cloud service prov
 - **UAB Bank**: VISA (Credit Card Only)
 - **Yoma Bank**: Mastercard (Debit Card Only)
 
-When selecting cloud vps providers, I have listed them in order based on free trial availability and convenience with bank cards in Myanmar.
+When selecting cloud vps providers, I have listed them in order based on free trial availability, free monthly internet data traffic availability and convenience with bank cards in Myanmar.
 
 ### 1.1 Amazon AWS Lightsail (Recommended)
 
