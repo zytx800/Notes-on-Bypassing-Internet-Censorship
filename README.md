@@ -211,7 +211,7 @@ Learn more about SoftEther on [SoftEther Official Website](https://www.softether
 
 - SSL-VPN (HTTPS) connection
 
-### 2.4 Sing-box (Not Tested)
+### 2.4 Sing-box
 
 It is an alternative to V2Ray and Xray and it can be used with various V2Ray/Xray clients.
 
