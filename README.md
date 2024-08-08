@@ -7,11 +7,8 @@ I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org
 I divide this note into three parts as follows:
 
 1. [Choosing Cloud VPS Providers](#1-choosing-cloud-vps-providers)
-2. [Choosing VPN / Proxy Tools](#2-choosing-vpn--proxy-tools)
-3. [Choosing Protocols and Security](#3-choosing-protocols-and-security)
-
-
-Another suggestion is that when setting up a vpn server, ***you should change your domain name and public ip every 3 or 4 weeks*** because GFW and traffic analyzers may still block your domains and IPs based on usage after a period of time.
+2. [Choosing VPN Tools and Protocols](#2-choosing-vpn-tools-and-protocols)
+3. [Protocol Notes](#3-protocol-notes)
 
 ## 1. Choosing Cloud VPS Providers
 
@@ -30,7 +27,7 @@ When selecting cloud vps providers, I have listed them in order based on free tr
 ### 1.1 Amazon AWS Lightsail (Recommended)
 
 - 3 months free tier available for new customers
-- Up to free **3 TB** monthly data traffic to internet when selecting 12 USD / month free trial plan, see more [data traffic pricing FAQ](https://aws.amazon.com/lightsail/faq/)
+- Up to free **3 TB** monthly data traffic to internet when selecting **12 USD / month free trial** plan, see more [data traffic pricing FAQ](https://aws.amazon.com/lightsail/faq/)
 - 2 vCPUs, 2 GB RAM, 60GB SSD
 - Suport account registration from Myanmar
 - Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards.)
@@ -50,7 +47,7 @@ When selecting cloud vps providers, I have listed them in order based on free tr
 
 - Free $200 credit for 12 months for new customers
 - Free **100 GB** data traffic monthly to internet, see more [Azure data traffice bandwidth pricing](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)
-- Azure account registration is currently not supported for Myanmar region, but VISA credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a Microsoft Azure supported country to help you sign up)
+- ***Azure account registration is currently not supported for Myanmar region***, but VISA credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a Microsoft Azure supported country to help you sign up)
 - [Microsoft Azure Website Link](https://azure.microsoft.com/en-us/free)
 
 ### 1.4 Google Cloud Platform
@@ -58,7 +55,7 @@ When selecting cloud vps providers, I have listed them in order based on free tr
 - Free $300 credit for 12 months for new customers
 - 1 x ec2-miro instance per month in free tier
 - Free **200 GB** data traffic monthly to internet, see more [Google Cloud Network Pricing](https://cloud.google.com/vpc/network-pricing)
-- GCP account registration is currently not supported for Myanmar region, but VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a GCP supported country to help you sign up)
+- ***GCP account registration is currently not supported for Myanmar region***, but VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a GCP supported country to help you sign up)
 - [Google Cloud Platform Website Link](https://cloud.google.com/free/)
 
 ### 1.5 DigitalOcean (Not Tested)
@@ -71,7 +68,13 @@ When selecting cloud vps providers, I have listed them in order based on free tr
 - $300 free credit for 30 days for new customers
 - [OCI Website Link](https://www.oracle.com/sg/cloud/free/)
 
-## 2. Choosing VPN / Proxy Tools
+### 1.7 VPS Servers with Unlimited Data Transfer Bandwidth
+
+- [JustHost](https://just.hosting/services/vps) - Note: Not tested
+- [UltaHost](https://bill.ultahost.com/store/linux-vps-hosting) - Note: Not tested
+- [DEVPS](https://bluevps.com/vps-unlimited-bandwidth) - Note: Not tested
+
+## 2. Choosing VPN Tools and Protocols
 
 I choose VPN and Proxy tools base on the followings:
 
@@ -79,6 +82,8 @@ I choose VPN and Proxy tools base on the followings:
 2. Long-term resistance and better bypass of GFW and other Internet filters
 3. Having a client app for Android, iOS, Windows, macOS and Linux platforms
 4. Having good speed test results
+
+My suggestion is that when setting up a vpn server, ***you should change your domain name and public ip every 3 or 4 weeks*** because GFW and traffic analyzers may still block your domains and IPs based on usage after a period of time.
 
 ### 2.1 Xray (Recommended)
 
@@ -96,13 +101,13 @@ Xray also features a powerful routing system that is highly customizable.
 
 Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/).
 
-#### Server-side setup
+#### Xray server-side setup
 
 - [Install Xray Core on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/xray)
 - [Hiddify Manager Setup](https://hiddify.com/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/) - (Xray Core + User Management Admin Web Panel - My Preferred Method)
 - [Marzban Web Panel Setup](https://github.com/Gozargah/Marzban) - (Xray Core + User Management Admin Web Panel)
 
-#### Client apps
+#### Xray client apps
 
 ##### Android apps
 
@@ -124,6 +129,7 @@ Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/
 
 ##### macOS apps
 
+- [Hiddify - Download from GitHub release](https://github.com/hiddify/hiddify-next/releases)  (Note: Not tested)
 - [V2RayXS - Download from GitHub release](https://github.com/tzmax/V2RayXS/releases) (Note: Not tested)
 - [Furious - Download from GitHub release](https://github.com/LorenEteval/Furious/releases) (Note: Not tested)
 - [Qv2ray - Download from GitHub release](https://github.com/Qv2ray/Qv2ray/releases) (Note: Not tested)
@@ -131,11 +137,81 @@ Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/
 
 ##### Linux apps
 
+- [Hiddify - Download from GitHub release](https://github.com/hiddify/hiddify-next/releases)  (Note: Not tested)
 - [v2rayA - Download from GitHub release](https://github.com/v2rayA/v2rayA/releases/) - (Note: Not tested)
 - [nekoray - Download from GitHub release](https://github.com/MatsuriDayo/nekoray/releases)  - (Note: Not tested)
 - [Furious - Download from GitHub release](https://github.com/LorenEteval/Furious/releases) (Note: Not tested)
 
-### 2.2 Sing-box (Not Tested)
+#### Recommended Protocols to use with Xray
+
+- VLESS (with TLS or REALITY security)
+- Trojan (with TLS security)
+
+### 2.2 Amnezia VPN
+
+Amnezia VPN is a free and open-source application that allows users to create a personal VPN using their own server.
+
+Amnezia VPN is a project by [Internet activists](https://en.wikipedia.org/wiki/Internet_activism) from Russia, who are searching for solutions to resist state censorship.
+
+Amnezia introduced its own **AmneziaWG** protocol, a latest addition, which is an improved version of a popular WireGuard protocol and was designed to be used in the world’s harshest internet climates.
+
+Learn more about [Amnezia - Official Website](https://amnezia.org/en)
+
+#### Installing Amnezia VPN on your own Server
+
+[See Amnezia Docs](https://docs.amnezia.org/documentation/instructions/install-vpn-on-server)
+
+#### Amnezia client apps
+
+##### Android apps
+
+- [Amnezia VPN - Download from Play Store](https://play.google.com/store/apps/details?id=org.amnezia.vpn)
+
+##### iOS apps
+
+- [AmneziaVPN - Download from App Store](https://apps.apple.com/us/app/amneziavpn/id1600529900)
+
+##### Windows apps
+
+- [AmneziaVPN - Download from GitHub Release](https://github.com/amnezia-vpn/amnezia-client/releases)
+
+##### macOS apps
+
+- [AmneziaVPN - Download from GitHub Release](https://github.com/amnezia-vpn/amnezia-client/releases)
+
+##### Linux apps
+
+- [AmneziaVPN - Download from GitHub Release](https://github.com/amnezia-vpn/amnezia-client/releases)
+
+#### Recommended Protocols to use with Amazia VPN
+
+- AmneziaWG
+
+### 2.3 SoftEther (Recommended for Windows Users)
+
+SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
+
+VPN protocols such as SSL-VPN (HTTPS), L2TP/IPsec, OpenVPN, and Microsoft Secure Socket Tunneling Protocol are provided in a single VPN server. Among those protocols, SoftEther's SSL-VPN (HTTPS) is currently resistant to GFW's filters (Tested with MPT FTTH, ATOM FTTH).
+
+Learn more about SoftEther on [SoftEther Official Website](https://www.softether.org/)
+
+***Note: I recommend SoftEther for Windows users with SSL-VPN (HTTPS) connection only.***
+
+#### SoftEther server-side setup
+
+[Setup SoftEther VPN Server on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/softether)
+
+#### SoftEther client apps
+
+##### Windows apps
+
+- [Download SoftEtherVPN client for Windows from GitHub releases](https://github.com/SoftEtherVPN/SoftEtherVPN/releases)
+
+#### Recommended Protocols to use with SoftEther VPN
+
+- SSL-VPN (HTTPS) connection
+
+### 2.4 Sing-box (Not Tested)
 
 It is an alternative to V2Ray and Xray and it can be used with various V2Ray/Xray clients.
 
@@ -147,7 +223,7 @@ For transport, it can be used with V2Ray transport options such as TCP, WebSocke
 
 Learn more sing-box on [Sing-box Official Website](https://sing-box.sagernet.org/)
 
-### 2.3 V2Ray
+### 2.5 V2Ray
 
 As the core part of [Project V](https://www.v2ray.com/), V2Ray is a tool that provides a secure platform for making private networks.
 
@@ -161,35 +237,13 @@ As of December 2019, V2Ray's optional transport layer configurations are: TCP, m
 
 Learn more about V2Ray on [Project V Official Website](https://www.v2ray.com/en/)
 
-### 2.4 SoftEther (Recommended for Windows Users)
-
-SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
-
-VPN protocols such as SSL-VPN (HTTPS), L2TP/IPsec, OpenVPN, and Microsoft Secure Socket Tunneling Protocol are provided in a single VPN server. Among those protocols, SoftEther's SSL-VPN (HTTPS) is currently resistant to GFW's filters (Tested with MPT FTTH, ATOM FTTH).
-
-Learn more about SoftEther on [SoftEther Official Website](https://www.softether.org/)
-
-***Note: I recommend SoftEther for Windows users with SSL-VPN (HTTPS) connection only.***
-
-#### Server-side setup
-
-- [Setup SoftEther VPN Server on Debian/Ubuntu](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/softether)
-
-#### Client apps
-
-##### Windows apps
-
-- [Download SoftEtherVPN client for Windows from GitHub releases](https://github.com/SoftEtherVPN/SoftEtherVPN/releases)
-
-### 2.5 Others
+### 2.6 Others
 
 - [OpenVPN](https://openvpn.net/) (Don't use it) - Most traffic analysis systems and GFW can easily recognize OpenVPN protocol and will block it.
 
 - [Outline VPN](https://getoutline.org/) (Not Recommended) - Outline vpn server uses Shadowsocks protocol. I tried Outline vpn with MPT FTTH, it got blocked after a few hours of use.
 
-- [Amnezia VPN](https://amnezia.org/en)  (Not Recommended) - In Amnezia vpn, you can choose a protocoal to use such as AmneziaWG, Xray, OpenVPN over Cloak, WireGuard, Ipsec (IKEv2). I tried Amnezia vpn and AmneziaWG with MPT FTTH, it got blocked after a few days of use.
-
-## 3. Choosing Protocols and Security
+## 3. Protocol Notes
 
 ### 3.1 VMess
 
@@ -233,7 +287,7 @@ Trojan is designed to operate in correctly configured TLS connections, as it doe
 
 [Learn more about Trojan-GFW](https://trojan-gfw.github.io/trojan/protocol)
 
-### 3.4 Trojan-Go (Recommended)
+### 3.4 Trojan-Go
 
 Compared with the original Trojan, Trojan-Go has some more features, such as multiplexing (smux) to reduce latency, improve concurrent performance, CDN traffic transfer, etc.
 
