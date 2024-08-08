@@ -1,6 +1,6 @@
 # Notes on Bypassing Internet Censorship in Myanmar
 
-***Last updated: 2024-07-31***
+***Last updated: 2024-08-08***
 
 I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW liked firewalls and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about internet freedom and internet censorship circumvention tools. There are many methods to bypass internet censorship. This repo is focusd on a short notes of what I experienced while building personal vpn platform to bypass internet censorship in Myanmar.
 
