@@ -218,3 +218,4 @@ See example [xray configs](https://github.com/zytx800/Notes-on-Bypassing-Interne
 - [Marzban Docs](https://gozargah.github.io/marzban/en/docs/introduction)
 - [Marzban GitHub](https://github.com/gozargah/marzban)
 - [Xray REALITY tutorial](https://cscot.pages.dev/2023/03/02/Xray-REALITY-tutorial/)
+- [XTLS-Iran-Reality](https://github.com/SasukeFreestyle/XTLS-Iran-Reality)
