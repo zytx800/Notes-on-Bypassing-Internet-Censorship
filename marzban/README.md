@@ -230,9 +230,9 @@ openssl rand -hex 8
 
 See example [xray config files](https://github.com/zytx800/Notes-on-Bypassing-Internet-Censorship/tree/main/marzban/example-configs).
 
-## Step 6 - (Optional) To update xray core version
+## Step 6 - (Optional) To update Xray core version
 
-### If you installed with advanced setup eethod
+### If you installed with advanced setup method
 
 (1) Download and extract xray core.
 
