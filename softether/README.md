@@ -90,7 +90,7 @@ PortsUDPSet
 exit
 ```
 
-### Step 6 - Set a SSL certificate
+### Step 6 - (Optional) Set a SSL certificate
 
 To issue a cert see [SSL Certificates section](https://github.com/zytx800/vpn-notes/tree/main/ssl-certificates)
 
@@ -106,6 +106,18 @@ ServerCertSet
 # Enter fullchain and private key file paths
 ```
 
+### Step 7 - (Optional) Enable BBR congestion control algorithm
+
+Copy and paste these three commands into your SSH session to enable the Bottleneck Bandwidth and Round-trip propagation time (BBR) congestion control algorithm:
+
+```bash
+sudo su
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+sysctl -p
+exit
+```
+
 ## References
 
-- [SoftEtherVPN GitHub - BUILD_UNIX](https://github.com/SoftEtherVPN/SoftEtherVPN/blob/master/src/BUILD_UNIX.md)
+- [SoftEtherVPN GitHub](https://github.com/SoftEtherVPN/SoftEtherVPN)
