@@ -1,78 +1,37 @@
 # Notes on Bypassing Internet Censorship in Myanmar
 
-***Last updated: 2024-08-08***
+***Last updated: 2024-12-18***
 
 I learned a little about GFW ([Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall)) after Myanmar internet service providers installed the GFW liked firewalls and censored some websites and VPNs. Along with learning a little about the GFW, I also learned a little about internet freedom and internet censorship circumvention tools. There are many methods to bypass internet censorship. This repo is focusd on a short notes of what I experienced while building personal vpn platform to bypass internet censorship in Myanmar.
 
 I divide this note into three parts as follows:
 
-1. [Choosing Cloud VPS Providers](#1-choosing-cloud-vps-providers)
+1. [Choosing VPS Providers](#1-choosing-vps-providers)
 2. [Choosing VPN Tools and Protocols](#2-choosing-vpn-tools-and-protocols)
 3. [Protocol Notes](#3-protocol-notes)
 
-## 1. Choosing Cloud VPS Providers
+## 1. Choosing VPS Providers
 
-Before choosing cloud vps providers, you need to know a little about international bank cards issued by Myanmar banks. Myanmar banks issue **VISA**, **Mastercard**, **JCB** and **UnionPay** cards as international payment cards. Most cloud service providers accept **Debit Card** or **Credit Card** only. **Prepaid Cards (Top-up Cards)** are not accepted by most cloud service providers.
-
-Here are some debit and credit cards that can be used in most cloud service providers and the banks that issue them:
-
-- **AYA Bank**: JCB (Debit & Credit Cards), VISA (Credit Card Only)
-- **CB Bank**: JCB (Debit Card Only), VISA (Credit Card Only), Mastercard (Credit Card Only)
-- **KBZ Bank**: VISA (Credit Card Only)
-- **UAB Bank**: VISA (Credit Card Only)
-- **Yoma Bank**: Mastercard (Debit Card Only)
-
-When selecting cloud vps providers, I have listed them in order based on free trial availability, free monthly internet data traffic availability and convenience with bank cards in Myanmar.
-
-### 1.1 Amazon AWS Lightsail (Recommended)
-
-- 3 months free tier available for new customers
-- Up to free **3 TB** monthly data traffic to internet when selecting **12 USD / month free trial** plan, see more [data traffic pricing FAQ](https://aws.amazon.com/lightsail/faq/)
-- 2 vCPUs, 2 GB RAM, 60GB SSD
-- Suport account registration from Myanmar
-- Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards.)
-- [AWS Lightsail Website Link](https://aws.amazon.com/free/compute/lightsail/)
-
-### 1.2 Amazon AWS EC2
+### 1.1 Amazon AWS EC2
 
 - 12 months free tier available for new customers
 - 1 x t2.micro instance per month in free tier
-- Free **100 GB** data traffic monthly to internet, see more [ec2 data traffic pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
+- Free **1 GB** data traffic monthly to internet (1.0 GB are always free per month as part of AWS Free Usage Tier), see more [ec2 data traffic pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
 - 1 vCPUs, 1 GB RAM and 30GB SSD
 - Suport account registration from Myanmar
 - Support VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks (Note: it doesn't support Prepaid Cards.)
 - [AWS EC2 Website Link](https://aws.amazon.com/ec2/)
 
-### 1.3 Microsoft Azure
+### 1.2 Microsoft Azure
 
 - Free $200 credit for 12 months for new customers
 - Free **100 GB** data traffic monthly to internet, see more [Azure data traffice bandwidth pricing](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)
 - ***Azure account registration is currently not supported for Myanmar region***, but VISA credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a Microsoft Azure supported country to help you sign up)
 - [Microsoft Azure Website Link](https://azure.microsoft.com/en-us/free)
 
-### 1.4 Google Cloud Platform
+### 1.3 VPS Servers with Unlimited Data Transfer Bandwidth
 
-- Free $300 credit for 12 months for new customers
-- 1 x ec2-miro instance per month in free tier
-- Free **200 GB** data traffic monthly to internet, see more [Google Cloud Network Pricing](https://cloud.google.com/vpc/network-pricing)
-- ***GCP account registration is currently not supported for Myanmar region***, but VISA, Mastercard and JCB debit or credit cards issued by Myanmar's Banks can be used. (Ask your friends who are in a GCP supported country to help you sign up)
-- [Google Cloud Platform Website Link](https://cloud.google.com/free/)
-
-### 1.5 DigitalOcean (Not Tested)
-
-- $200 free credit for 60 days for new customers
-- [DigitalOcean Website Link](https://try.digitalocean.com/freetrialoffer/)
-
-### 1.6 Oracle Cloud Infrastructure  (Not Tested)
-
-- $300 free credit for 30 days for new customers
-- [OCI Website Link](https://www.oracle.com/sg/cloud/free/)
-
-### 1.7 VPS Servers with Unlimited Data Transfer Bandwidth
-
-- [JustHost](https://just.hosting/services/vps) - Note: Not tested
-- [UltaHost](https://bill.ultahost.com/store/linux-vps-hosting) - Note: Not tested
-- [DEVPS](https://bluevps.com/vps-unlimited-bandwidth) - Note: Not tested
+- [JustHost](https://justhost.asia/en/services/vps)
 
 ## 2. Choosing VPN Tools and Protocols
 
@@ -83,9 +42,7 @@ I choose VPN and Proxy tools base on the followings:
 3. Having a client app for Android, iOS, Windows, macOS and Linux platforms
 4. Having good speed test results
 
-My suggestion is that when setting up a vpn server, ***you should change your domain name and public ip every 3 or 4 weeks*** because GFW and traffic analyzers may still block your domains and IPs based on usage after a period of time.
-
-### 2.1 Xray (Recommended)
+### 2.1 Xray
 
 Xray is completely similar to V2Ray, and Xray is the core module of [Project X](https://xtls.github.io/en/).
 
@@ -116,7 +73,8 @@ Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/
 
 ##### iOS apps
 
-- [FoXray - Download from App Store](https://apps.apple.com/us/app/foxray/id6448898396) (Note: Free, not open-source - My Preferred iOS App)
+- [Hiddify - Download from App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone) (Note: Free, Open-source - My Preferred iOS App)
+- [FoXray - Download from App Store](https://apps.apple.com/us/app/foxray/id6448898396) (Note: Free, not open-source)
 - [V2Box - Download from App Store](https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690)  (Note: Free, not open-source, contains Ads)
 - [Streisand - Download from App Store](https://apps.apple.com/us/app/streisand/id6450534064) (Note: Free, not open-source, contains Ads)
 
@@ -144,8 +102,7 @@ Learn more about Xray on [Project X Official Website](https://xtls.github.io/en/
 
 #### Recommended Protocols to use with Xray
 
-- VLESS (with TLS or REALITY security)
-- Trojan (with TLS security)
+- VLESS (with REALITY security)
 
 ### 2.2 Amnezia VPN
 
@@ -187,7 +144,7 @@ Learn more about [Amnezia - Official Website](https://amnezia.org/en)
 
 - AmneziaWG
 
-### 2.3 SoftEther (Recommended for Windows Users)
+### 2.3 SoftEther (For Windows Users)
 
 SoftEther VPN is free open-source, cross-platform, multi-protocol VPN client and VPN server software, developed as part of Daiyuu Nobori's master's thesis research at the University of Tsukuba.
 
@@ -309,7 +266,7 @@ Currently, Burmese operators already have the technology to detect Shadowscocks 
 
 [Learn more about Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks)
 
-### 3.6 AmneziaWG
+### 3.6 AmneziaWG (Recommended)
 
 AmneziaWG is built upon the foundation set by WireGuard®, retaining its simplified architecture and high-performance capabilities across devices.
 
@@ -317,7 +274,7 @@ While WireGuard® is known for its efficiency, it had issues with being easily d
 
 [Learn more about Amnezia VPN](https://docs.amnezia.org/)
 
-### 3.7 Unrecommended Protocols
+### 3.7 Not recommended Protocols
 
 The following protocols are not recommended to use. Most traffic analysis systems including GFW can easily recognize them.
 
